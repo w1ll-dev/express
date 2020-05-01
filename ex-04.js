@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 
+//with route method we can call many http verb in sequency like this
 app.route('/client')
     .get((req, res) => res.send('Clients list'))
     .post((req, res) => res.send('Add client'))
